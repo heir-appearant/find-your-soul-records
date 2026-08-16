@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>;Find Your Soul Records | Music Production & Audio Services</title>
+    <meta
+      name="description"
+      content="Creative audio production, music services, and artist development. Building legacies through authentic work."
+    />
+    <style>
+      :root {
+        --bg: #0a1f3f;
+        --gold: #e9d59b;
+        --gold-deep: #b5933f;
+        --mist: #e9edf2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--mist);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      /* Header & Nav */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(3, 8, 15, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(233, 213, 155, 0.12);
+      }
+
+      nav {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--gold);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus {
+        color: var(--gold);
+      }
+
+      /* Hero */
+      .hero {
+        padding: 80px 0 60px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1.1;
+        color: var(--mist);
+      }
+
+      .tagline {
+        margin: 0 0 12px;
+        font-size: clamp(1.3rem, 3vw, 2rem);
+        color: var(--gold);
+        font-weight: 600;
+      }
+
+      .subheading {
+        margin: 0 0 32px;
+        font-size: clamp(1rem, 1.8vw, 1.4rem);
+        color: rgba(255, 255, 255, 0.75);
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-logo {
+        width: 320px;
+        max-width: 75vw;
+        margin: 10px auto 25px;
+        opacity: 0.85;
+        filter:
+          drop-shadow(0 0 25px rgba(233, 213, 155, 0.20))
+          drop-shadow(0 20px 40px rgba(0, 0, 0, 0.40));
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 14px 32px;
+        background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+        color: #1a1a1a;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 10px 24px rgba(233, 213, 155, 0.2);
+      }
+
+      .cta-button:hover,
+      .cta-button:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 32px rgba(233, 213, 155, 0.3);
+      }
+
+      /* Section */
+      section {
+        padding: 60px 0;
+        border-top: 1px solid rgba(233, 213, 155, 0.08);
+      }
+
+      section:first-of-type {
+        border-top: none;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 42px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: var(--gold);
+        text-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .section-desc {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.75);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Services Grid */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+      }
+
+      .service-card {
+        padding: 28px 24px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(233, 213, 155, 0.15);
+        border-radius: 8px;
+        transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.25);
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(233, 213, 155, 0.35);
+      }
+
+      .service-card h3 {
+        margin: 0 0 12px;
+        font-size: 1.4rem;
+        color: var(--gold);
+      }
+
+      .price {
+        margin: 16px 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--gold);
+      }
+
+      .price-note {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.65);
+        margin-bottom: 16px;
+      }
+
+      .features {
+        list-style: none;
+        margin: 0 0 20px;
+        padding: 0;
+      }
+
+      .features li {
+        padding: 6px 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+      }
+
+      .features li::before {
+        content: "• ";
+        color: var(--gold);
+        font-weight: 700;
+        margin-right: 8px;
+      }
+
+      .btn-secondary {
+        display: inline-block;
+        padding: 10px 20px;
+        background: rgba(233, 213, 155, 0.08);
+        border: 1px solid rgba(233, 213, 155, 0.25);
+        color: var(--gold);
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        transition: all 0.2s ease;
+      }
+
+      .btn-secondary:hover {
+        background: rgba(233, 213, 155, 0.15);
+        border-color: rgba(233, 213, 155, 0.5);
+      }
+
+      /* Portfolio */
+      .portfolio-item {
+        padding: 24px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(233, 213, 155, 0.12);
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .portfolio-item h4 {
+        margin: 0 0 6px;
+        color: var(--gold);
+        font-size: 1.2rem;
+      }
+
+      .portfolio-item .meta {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+
+      .portfolio-item ul {
+        margin: 0;
+        padding-left: 18px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .portfolio-item li {
+        margin: 4px 0;
+      }
+
+      /* Work Cards */
+      .work-card {
+        padding: 28px 24px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(233, 213, 155, 0.15);
+        border-radius: 8px;
+        margin-bottom: 24px;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.25);
+      }
+
+      .work-card h3 {
+        margin: 0 0 18px;
+        font-size: 1.3rem;
+        color: var(--gold);
+      }
+
+      .work-card ul {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .work-card ul li {
+        margin: 8px 0;
+        font-size: 0.95rem;
+      }
+
+      .work-card p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+
+      .section-intro {
+        text-align: center;
+        max-width: 700px;
+        margin: -20px auto 40px;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      /* About */
+      .about-text {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      /* Featured Artist */
+      .featured-artist {
+        text-align: center;
+        padding: 40px 24px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(233, 213, 155, 0.12);
+        border-radius: 8px;
+      }
+
+      .featured-artist h3 {
+        margin: 0 0 8px;
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 700;
+      }
+
+      .featured-artist h4 {
+        margin: 0 0 6px;
+        font-size: 2rem;
+        color: var(--mist);
+      }
+
+      .featured-artist .role {
+        margin: 0 0 16px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+      }
+
+      .featured-artist p {
+        margin: 0 0 20px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      /* Contact Form */
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--mist);
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(233, 213, 155, 0.2);
+        border-radius: 4px;
+        color: var(--mist);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: border-color 0.2s ease;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--gold);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="checkbox"] {
+        width: auto;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+
+      .checkbox-item label {
+        margin: 0;
+        cursor: pointer;
+        flex: 1;
+      }
+
+      .form-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Footer */
+      footer {
+        padding: 40px 0;
+        border-top: 1px solid rgba(233, 213, 155, 0.08);
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: 16px;
+        }
+
+        .nav-links a {
+          font-size: 0.7rem;
+        }
+
+        section {
+          padding: 40px 0;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .checkbox-group {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav aria-label="Main navigation">
+          <a href="#top" class="brand">;Find Your Soul Records</a>
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1>Build Your Legacy;<br /><span style="color: var(--gold);">Find Your Soul</span></h1>
+          <img src="hero-logo.png" alt=";Find Your Soul Records" class="hero-logo" />
+          <p class="tagline">Creative Development • Music Production • Audio Services</p>
+          <p class="subheading">
+            A creative enterprise helping artists, organizations, and businesses transform ideas into meaningful work.
+          </p>
+          <p class="subheading" style="font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255, 255, 255, 0.8); margin-top: 24px;">
+            Founded by Dustin Doolittle, ;Find Your Soul Records provides music production, audio services, and creative development for artists, organizations, and businesses.
+          </p>
+          <a href="#services" class="cta-button">View Services</a>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section id="why-us">
+        <div class="container">
+          <div class="section-header">
+            <h2>Why Work With Us?</h2>
+          </div>
+          <div style="max-width: 700px; margin: 0 auto; display: grid; gap: 24px;">
+            <div style="padding: 24px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(233, 213, 155, 0.12); border-radius: 8px;">
+              <p style="margin: 0; font-size: 1.1rem; color: var(--mist);"><span style="color: var(--gold); font-weight: 700; font-size: 1.3rem;">✓</span> <strong>Independent and client-focused</strong></p>
+              <p style="margin: 8px 0 0; color: rgba(255, 255, 255, 0.75); font-size: 0.95rem;">We work with you, not for you. Your vision drives our work.</p>
+            </div>
+            <div style="padding: 24px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(233, 213, 155, 0.12); border-radius: 8px;">
+              <p style="margin: 0; font-size: 1.1rem; color: var(--mist);"><span style="color: var(--gold); font-weight: 700; font-size: 1.3rem;">✓</span> <strong>Real-world live audio experience</strong></p>
+              <p style="margin: 8px 0 0; color: rgba(255, 255, 255, 0.75); font-size: 0.95rem;">Experience from professional event audio and troubleshooting.</p>
+            </div>
+            <div style="padding: 24px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(233, 213, 155, 0.12); border-radius: 8px;">
+              <p style="margin: 0; font-size: 1.1rem; color: var(--mist);"><span style="color: var(--gold); font-weight: 700; font-size: 1.3rem;">✓</span> <strong>Creative development beyond music production</strong></p>
+              <p style="margin: 8px 0 0; color: rgba(255, 255, 255, 0.75); font-size: 0.95rem;">Artist branding, strategy, and visionary planning included.</p>
+            </div>
+            <div style="padding: 24px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(233, 213, 155, 0.12); border-radius: 8px;">
+              <p style="margin: 0; font-size: 1.1rem; color: var(--mist);"><span style="color: var(--gold); font-weight: 700; font-size: 1.3rem;">✓</span> <strong>Personalized service on every project</strong></p>
+              <p style="margin: 8px 0 0; color: rgba(255, 255, 255, 0.75); font-size: 0.95rem;">No cookie-cutter solutions. We customize to your needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services & Pricing -->
+      <section id="services">
+        <div class="container">
+          <div class="section-header">
+            <h2>Services & Pricing</h2>
+            <p class="section-desc">Professional creative and audio services tailored to your project's needs.</p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Music Production -->
+            <div class="service-card">
+              <h3>Music Production</h3>
+              <div class="price">Starting at $300</div>
+              <p class="price-note">Per song or project</p>
+              <ul class="features">
+                <li>Arrangement & composition</li>
+                <li>Full production</li>
+                <li>Mix & master</li>
+                <li>Unlimited revisions</li>
+              </ul>
+              <a href="#contact" class="btn-secondary">Request Quote</a>
+            </div>
+
+            <!-- Mixing -->
+            <div class="service-card">
+              <h3>Mixing</h3>
+              <div class="price">$75</div>
+              <p class="price-note">Starting price per song</p>
+              <ul class="features">
+                <li>Professional mix</li>
+                <li>2 revisions included</li>
+                <li>WAV delivery</li>
+                <li>Balanced for streaming</li>
+              </ul>
+              <a href="#contact" class="btn-secondary">Request Quote</a>
+            </div>
+
+            <!-- Mixing & Mastering -->
+            <div class="service-card">
+              <h3>Mix & Master</h3>
+              <div class="price">$150</div>
+              <p class="price-note">Per song</p>
+              <ul class="features">
+                <li>Professional mix</li>
+                <li>Mastering for all platforms</li>
+                <li>3 revisions included</li>
+                <li>Ready for release</li>
+              </ul>
+              <a href="#contact" class="btn-secondary">Request Quote</a>
+            </div>
+
+            <!-- Live Audio -->
+            <div class="service-card">
+              <h3>Live Audio Support</h3>
+              <div class="price">$25/hr</div>
+              <p class="price-note">Or $150+ for events</p>
+              <ul class="features">
+                <li>Equipment setup & teardown</li>
+                <li>Stage management</li>
+                <li>Sound checks</li>
+                <li>Technical troubleshooting</li>
+              </ul>
+              <a href="#contact" class="btn-secondary">Request Quote</a>
+            </div>
+
+            <!-- Creative Consultation -->
+            <div class="service-card">
+              <h3>Creative Consultation</h3>
+              <div class="price">$50/hr</div>
+              <p class="price-note">Flexible packages available</p>
+              <ul class="features">
+                <li>Artist branding & vision</li>
+                <li>Song feedback & analysis</li>
+                <li>Release strategy</li>
+                <li>Development planning</li>
+              </ul>
+              <a href="#contact" class="btn-secondary">Request Quote</a>
+            </div>
+
+            <!-- Custom Projects -->
+            <div class="service-card">
+              <h3>Custom Projects</h3>
+              <div class="price">Quoted</div>
+              <p class="price-note">Based on scope</p>
+              <ul class="features">
+                <li>Unique audio needs</li>
+                <li>Corporate/organizational work</li>
+                <li>Multi-track recording</li>
+                <li>Special requests</li>
+              </ul>
+              <a href="#contact" class="btn-secondary">Discuss Your Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+
+        <div class="container">
+
+          <h2>Recent Work & Experience</h2>
+
+          <p class="section-intro">
+            ;Find Your Soul Records brings together creative development,
+            music production, technical audio expertise, and collaborative
+            project experience. Our work spans original music releases,
+            live audio support, AV integration, MIDI systems, and artist
+            development.
+          </p>
+
+          <div class="work-card">
+
+            <h3>Published & Developing Music</h3>
+
+            <p>
+              Original music projects developed under the
+              ;Find Your Soul Records banner include:
+            </p>
+
+            <ul>
+              <li>A Penny for Your Penance</li>
+              <li>Man, Overboard</li>
+              <li>Tear Me Down</li>
+              <li>A Waltz For Cinderella</li>
+              <li>Multiple unreleased compositions, demos,
+              instrumental concepts, and production works
+              currently in development.</li>
+            </ul>
+
+          </div>
+
+          <div class="work-card">
+
+            <h3>Technical Audio & Production Experience</h3>
+
+            <ul>
+              <li>Live audio support and event production</li>
+              <li>Stage setup and technical operation</li>
+              <li>AV installation and system configuration</li>
+              <li>MIDI routing and integration projects</li>
+              <li>Audio diagnostics and troubleshooting</li>
+              <li>Cable infrastructure and stage management</li>
+              <li>Recording and production support</li>
+            </ul>
+
+          </div>
+
+          <div class="work-card">
+
+            <h3>Collaborative & Creative Development</h3>
+
+            <p>
+              Experience working alongside artists, musicians,
+              engineers, and industry professionals on a variety
+              of creative and technical projects. Contributions
+              have ranged from songwriting and production support
+              to technical consultation, system integration,
+              project development, and creative direction.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>About</h2>
+          </div>
+
+          <p class="about-text">
+            ;Find Your Soul Records is a creative enterprise founded by Dustin Doolittle. We help creators and organizations transform ideas into meaningful work through music production, professional audio services, and creative development. Our mission is to build lasting legacies grounded in authentic artistry, honest storytelling, and technical excellence.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured Artist -->
+      <section id="artist">
+        <div class="container">
+          <div class="featured-artist">
+            <h3>Featured Artist</h3>
+            <h4>Heir; Appearant</h4>
+            <p class="role">Artist • Producer • Storyteller</p>
+            <p>
+              A fusion of soul, blues, hip-hop, and alternative expression grounded in truth and resilience. Exploring personal evolution through powerful storytelling and layered production.
+            </p>
+            <a href="#contact" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p class="section-desc">Ready to start your project? Contact us with details about your needs.</p>
+          </div>
+
+          <div class="form-wrapper">
+            <form name="contact" method="POST" netlify>
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label>Service Interested In *</label>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="prod" name="service" value="Music Production" />
+                    <label for="prod">Music Production</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="mix" name="service" value="Mixing" />
+                    <label for="mix">Mixing</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="master" name="service" value="Mastering" />
+                    <label for="master">Mastering</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="live" name="service" value="Live Audio Support" />
+                    <label for="live">Live Audio</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="consult" name="service" value="Creative Consultation" />
+                    <label for="consult">Consultation</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="custom" name="service" value="Custom Project" />
+                    <label for="custom">Custom Project</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="description">Project Description *</label>
+                <textarea id="description" name="description" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="timeline">Target Timeline</label>
+                <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 weeks, ASAP, TBD" />
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Estimated Budget</label>
+                <input type="text" id="budget" name="budget" placeholder="e.g., $100-$500, Open to discussion" />
+              </div>
+
+              <button type="submit" class="cta-button" style="width: 100%;">Send Inquiry</button>
+            </form>
+          </div>
+
+          <div style="text-align: center; margin-top: 40px; color: rgba(255, 255, 255, 0.7);">
+            <p style="margin: 0 0 12px;">Or reach out directly:</p>
+            <p style="margin: 0;">
+              <strong>Email:</strong> contact.findyoursoul@gmail.com<br />
+              <strong>Phone:</strong> (409) 812-6793
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 ;Find Your Soul Records</p>
+        <p>Build Your Legacy; Find Your Soul</p>
+      </div>
+    </footer>
+  </body>
+</html>
