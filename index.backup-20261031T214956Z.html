@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>;Find Your Soul Records | Build Your Legacy; Find Your Soul</title>
+<meta name="description" content="Audio infrastructure, creative development, production support, and artist development for meaningful work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#07162b;--navy-deep:#050f20;--charcoal:#15171b;--gold:#c9aa62;--gold-light:#dfc992;--ivory:#eee9dc;--muted:rgba(238,233,220,.68)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy-deep);color:var(--ivory);font-family:Manrope,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}a{color:inherit;text-decoration:none}.frame{width:min(1180px,calc(100% - 64px));margin:auto}header{height:92px;position:fixed;top:0;background:rgba(5,15,32,.96);backdrop-filter:blur(12px);z-index:10;width:100%;border-bottom:1px solid rgba(201,170,98,.16)}nav{height:100%;width:min(1180px,calc(100% - 64px));margin:auto;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Cormorant Garamond",serif;font-size:19px}.brand i{color:var(--gold);font-style:normal;font-size:32px;margin-right:4px;vertical-align:-.08em}.navlinks{display:flex;gap:34px;font-size:9px;text-transform:uppercase;letter-spacing:.24em;color:rgba(238,233,220,.68)}.navlinks a:hover{color:var(--gold-light)}.navlinks a.active{color:var(--gold-light)}.navlinks a.active:after{content:"";display:block;height:1px;background:var(--gold);margin-top:6px}
+.hero{min-height:820px;height:94vh;max-height:980px;display:grid;grid-template-columns:54% 46%;overflow:hidden}.hero-copy{position:relative;padding-left:max(32px,calc((100vw - 1180px)/2));padding-right:7%;display:flex;flex-direction:column;justify-content:center}.kicker{font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-light);display:flex;align-items:center;gap:14px}.kicker:before{content:"";width:42px;height:1px;background:var(--gold)}.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(72px,8.2vw,126px);font-weight:400;letter-spacing:-.045em;line-height:.78;margin:46px 0 32px}.hero h1 span,.hero h1 em{display:block}.hero h1 em{color:var(--gold-light);font-weight:400}.hero-sub{max-width:520px;font-size:14px;line-height:1.8;color:rgba(238,233,220,.82)}.hero-detail{max-width:465px;margin-top:18px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.45;color:var(--muted)}.hero-cta{display:inline-flex;width:max-content;margin-top:30px;padding-bottom:10px;border-bottom:1px solid var(--gold);font-size:9px;text-transform:uppercase;letter-spacing:.24em}.hero-cta:after{content:" ↗";color:var(--gold);margin-left:14px}.folio{position:absolute;left:max(32px,calc((100vw - 1180px)/2));bottom:42px;font-size:9px;letter-spacing:.22em;color:rgba(238,233,220,.48)}.hero-art{position:relative;border-left:1px solid rgba(201,170,98,.12)}.hero-art img{width:100%;height:100%;object-fit:cover;filter:sepia(.22) brightness(.68) contrast(1.08)}.hero-art:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy),transparent 26%),linear-gradient(180deg,rgba(7,22,43,.08),rgba(7,22,43,.52))}.hero-mark{position:absolute;z-index:2;right:16px;bottom:34px;writing-mode:vertical-rl;font-family:"Cormorant Garamond",serif;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-light)}
+section{border-top:1px solid rgba(201,170,98,.16)}.section-number{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:13px}.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,6vw,82px);font-weight:400;line-height:.92;margin:0}.section-title em{color:var(--gold-light)}
+.what{background:var(--navy-deep);padding-block:120px}.what-grid{display:grid;grid-template-columns:180px 1fr;gap:60px}.what .section-title{margin-bottom:70px}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(201,170,98,.25)}.service{min-height:340px;padding:38px 34px 26px 0;border-right:1px solid rgba(201,170,98,.18)}.service:not(:first-child){padding-left:34px}.service:last-child{border-right:0}.roman{font-family:"Cormorant Garamond",serif;color:var(--gold)}.service h3{font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:400;line-height:1;margin:62px 0 24px}.service p{max-width:290px;font-size:13px;line-height:1.75;color:var(--muted)}
+.serve{background:var(--charcoal);padding-block:120px}.serve-grid{display:grid;grid-template-columns:180px 1fr;gap:60px}.serve-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(201,170,98,.22)}.serve-item{min-height:150px;padding:30px 34px 30px 0;border-bottom:1px solid rgba(201,170,98,.18)}.serve-item:nth-child(odd){border-right:1px solid rgba(201,170,98,.18)}.serve-item:nth-child(even){padding-left:34px}.serve-item h3{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:400;margin:0 0 12px;color:var(--gold-light)}.serve-item p{font-size:12px;line-height:1.7;color:var(--muted);max-width:390px}
+.experience{background:var(--navy-deep);padding-block:120px}.experience-grid{display:grid;grid-template-columns:180px 1fr;gap:60px}.experience-list{border-top:1px solid rgba(201,170,98,.22)}.experience-row{min-height:88px;display:grid;grid-template-columns:54px 1fr;align-items:center;border-bottom:1px solid rgba(201,170,98,.18)}.experience-row span:first-child{font-family:"Cormorant Garamond",serif;color:var(--gold)}.experience-row h3{font-family:"Cormorant Garamond",serif;font-size:31px;font-weight:400;margin:0}.experience-row p{font-size:11px;line-height:1.35;color:var(--muted);margin:4px 0 0}
+.philosophy{background:#101722;padding-block:140px}.philosophy-grid{display:grid;grid-template-columns:180px 1fr;gap:60px}.philosophy h2{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,7vw,92px);font-weight:400;line-height:.86;margin:0 0 55px}.philosophy h2 em{color:var(--gold-light)}.philosophy h2 em i{font-style:normal;color:var(--gold)}.belief{font-family:"Cormorant Garamond",serif;font-size:27px;line-height:1.35;margin-bottom:38px}.philosophy-copy{max-width:660px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.55;color:var(--muted)}
+.spotlight{background:var(--charcoal);padding-block:120px}.spotlight-grid{min-height:420px;display:grid;grid-template-columns:180px 180px 1fr;gap:60px;align-items:center}.spotlight h2{font-family:"Cormorant Garamond",serif;font-size:48px;font-weight:400;line-height:.95;margin:0}.spotlight-name{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,6vw,82px);line-height:.86;color:var(--gold-light)}.spotlight-name i{font-style:normal;color:var(--gold)}.spotlight-copy{max-width:560px;font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.45;color:var(--muted)}
+.contact{background:var(--navy-deep);padding-block:120px}.contact-grid{display:grid;grid-template-columns:180px .9fr 1.1fr;gap:60px}.contact h2{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,6vw,82px);font-weight:400;line-height:.9;margin:0 0 24px}.contact-intro{font-size:13px;line-height:1.8;color:var(--muted);max-width:390px}.contact-info{margin-top:40px;font-family:"Cormorant Garamond",serif;font-size:20px}form{display:grid;gap:22px}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}label{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--gold-light);margin-bottom:9px}input,select,textarea{width:100%;border:0;border-bottom:1px solid rgba(201,170,98,.38);background:transparent;color:var(--ivory);padding:10px 0;font-family:inherit;font-size:14px;outline:none}select option{background:var(--navy-deep)}textarea{min-height:100px;resize:vertical}button{justify-self:start;border:1px solid var(--gold);background:transparent;color:var(--ivory);padding:14px 22px;font-size:9px;text-transform:uppercase;letter-spacing:.22em;cursor:pointer}button:hover{background:var(--gold);color:var(--ink)}footer{height:100px;border-top:1px solid rgba(201,170,98,.16);display:flex;align-items:center}footer div{display:flex;justify-content:space-between;font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:rgba(238,233,220,.45)}
+@media(min-width:801px){.hero{display:grid;grid-template-columns:54% 46%;padding-top:92px}.hero-art{display:block;position:relative;inset:auto;height:auto;opacity:1;border-left:1px solid rgba(201,170,98,.12)}}
+@media(max-width:800px){.frame,nav{width:calc(100% - 40px)}header{height:76px}.navlinks{display:none}.brand{font-size:16px}.hero{height:auto;min-height:760px;grid-template-columns:1fr}.hero-copy{padding:150px 20px 80px;z-index:3}.hero h1{font-size:67px}.hero-art{position:absolute;inset:76px 0 0 26%;height:auto;opacity:.48}.hero-art:before{background:linear-gradient(90deg,var(--navy),transparent 48%),linear-gradient(180deg,rgba(7,22,43,.1),var(--navy))}.folio{left:20px;bottom:28px}.what-grid,.serve-grid,.experience-grid,.philosophy-grid,.spotlight-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.what,.serve,.experience,.philosophy,.spotlight,.contact{padding-block:78px}.section-title{font-size:52px}.what .section-title{margin-bottom:44px}.services-grid{grid-template-columns:1fr}.service{min-height:auto;padding:32px 0 42px!important;border-right:0;border-bottom:1px solid rgba(201,170,98,.18)}.service h3{margin-top:42px}.serve-list{grid-template-columns:1fr}.serve-item:nth-child(odd){border-right:0}.serve-item:nth-child(even){padding-left:0}.experience-row h3{font-size:26px}.philosophy h2{font-size:54px}.spotlight-grid{min-height:0}.spotlight-grid>div:first-of-type{display:none}.field-row{grid-template-columns:1fr}footer div{gap:20px}}
+.menu-toggle{display:flex;width:42px;height:42px;padding:0;border:1px solid rgba(201,170,98,.5);background:transparent;color:var(--gold-light);align-items:center;justify-content:center;font-size:18px;cursor:pointer}
+.menu-toggle:hover,.menu-toggle[aria-expanded="true"]{background:rgba(201,170,98,.12)}
+.navlinks{position:absolute;top:92px;right:max(32px,calc((100vw - 1180px)/2));width:min(320px,calc(100vw - 40px));padding:14px 0;background:rgba(5,15,32,.98);border:1px solid rgba(201,170,98,.38);box-shadow:0 22px 50px rgba(0,0,0,.38);flex-direction:column;gap:0;opacity:0;visibility:hidden;transform:translateY(-10px);transition:.18s ease}
+.navlinks.open{opacity:1;visibility:visible;transform:translateY(0)}
+.navlinks a{padding:16px 24px;border-bottom:1px solid rgba(201,170,98,.12)}
+.navlinks a:last-child{border-bottom:0}
+#services{background:#07162b}
+main section[id]{scroll-margin-top:92px}
+#why{background:#0b1a30}
+#experience{background:#0d1727}
+#artist{background:#1a1c20}
+#contact{background:#050f20}
+@media(max-width:800px){
+.navlinks{position:fixed;top:76px;right:20px}
+.navlinks:not(.open){display:flex}
+.navlinks.open{display:flex}
+main section[id]{scroll-margin-top:76px}
+}
+</style>
+</head>
+<body>
+<header><nav><a class="brand" href="#top"><i>;</i>Find Your Soul Records</a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="navlinks"><a href="#top">Home</a><a href="#services">Services</a><a href="#audience">Who We Serve</a><a href="#experience">Experience</a><a href="#philosophy">Philosophy</a><a href="#why">Why FYSR</a><a href="#artist">Artist</a><a href="#contact">Contact</a></div></nav></header>
+<main id="top">
+<section class="hero"><div class="hero-copy"><div class="kicker">;Find Your Soul Records</div><h1><span>BUILD YOUR LEGACY;</span><em>FIND YOUR SOUL</em></h1><p class="hero-sub">Professional audio support, creative development, and production services for artists, organizations, and live events.</p><p class="hero-detail">;Find Your Soul Records exists to help transform meaningful ideas into lasting work through sound, story, craftsmanship, and technical excellence.</p><a class="hero-cta" href="#contact">Start a Conversation</a><div class="folio">Voice / Vision / Legacy</div></div><div class="hero-art"><img src="hero-logo.png" alt=";Find Your Soul Records"><div class="hero-mark">FYSR — Est. 2026</div></div></section>
+
+<section class="what" id="services">
+<div class="frame what-grid">
+<div class="section-number">01 / What We Do</div>
+<div>
+<h2 class="section-title">What We Do</h2>
+<div class="services-grid">
+<article class="service">
+<div class="roman">I</div>
+<h3>Audio<br>Infrastructure</h3>
+<p>System support, technical troubleshooting, stage infrastructure, signal flow, integration, and event audio support.</p>
+</article>
+<article class="service">
+<div class="roman">II</div>
+<h3>Creative<br>Development</h3>
+<p>Artist development, branding, vision planning, storytelling, and creative strategy.</p>
+</article>
+<article class="service">
+<div class="roman">III</div>
+<h3>Production<br>Support</h3>
+<p>Recording support, project development, production consultation, and collaborative execution.</p>
+</article>
+<article class="service">
+<div class="roman">IV</div>
+<h3>Installation<br>Services</h3>
+<p>Audio system installation, signal routing, equipment integration, stage infrastructure, cable management, and deployment support.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="serve" id="audience">
+<div class="frame serve-grid">
+<div class="section-number">02 / Who We Serve</div>
+<div>
+<h2 class="section-title">Who We Serve</h2>
+<div class="serve-list">
+<article class="serve-item">
+<h3>Artists</h3>
+<p>Creative direction and technical support for independent work with a lasting voice.</p>
+</article>
+<article class="serve-item">
+<h3>Churches</h3>
+<p>Dependable audio and production support for worship services and ministry gatherings.</p>
+</article>
+<article class="serve-item">
+<h3>Schools</h3>
+<p>Practical sound support for performances, programs, ceremonies, and student events.</p>
+</article>
+<article class="serve-item">
+<h3>Festivals</h3>
+<p>Stage-focused audio support built around changing systems and demanding schedules.</p>
+</article>
+<article class="serve-item">
+<h3>Organizations</h3>
+<p>Clear, considered support for presentations, productions, and public-facing work.</p>
+</article>
+<article class="serve-item">
+<h3>Community Events</h3>
+<p>Technical and production help for gatherings that bring people together.</p>
+</article>
+<article class="serve-item">
+<h3>Private Events</h3>
+<p>Attentive event audio for moments that deserve to be heard and remembered.</p>
+</article>
+<article class="serve-item">
+<h3>Businesses</h3>
+<p>Professional sound and technical support for launches, meetings, and special events.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="serve" id="why">
+<div class="frame serve-grid">
+<div class="section-number">03 / Why FYSR</div>
+<div>
+<h2 class="section-title">Why <em>FYSR</em></h2>
+<div class="serve-list">
+<article class="serve-item">
+<h3>Independent By Design</h3>
+<p>Close attention, direct collaboration, and work shaped around the people and purpose behind it.</p>
+</article>
+<article class="serve-item">
+<h3>Built On Real Experience</h3>
+<p>Creative judgment grounded in hands-on technical work, practical problem-solving, and lived understanding.</p>
+</article>
+<article class="serve-item">
+<h3>Development Beyond Deliverables</h3>
+<p>Support that strengthens the work, builds confidence, and carries forward beyond a single project.</p>
+</article>
+<article class="serve-item">
+<h3>Meaningful Work Deserves Meaningful Support</h3>
+<p>Ideas, stories, and voices are approached with the care and intention they deserve.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="experience" id="experience">
+<div class="frame experience-grid">
+<div class="section-number">04 / Selected Experience</div>
+<div>
+<h2 class="section-title">Selected<br><em>Experience</em></h2>
+<div class="experience-list">
+<div class="experience-row">
+<span>01</span>
+<div>
+<h3>Live Audio Support</h3>
+<p>Concerts, community events, and production assistance.</p>
+</div>
+</div>
+<div class="experience-row">
+<span>02</span>
+<div>
+<h3>MIDI Integration</h3>
+<p>Programming, playback systems, and live performance control.</p>
+</div>
+</div>
+<div class="experience-row">
+<span>03</span>
+<div>
+<h3>Technical Troubleshooting</h3>
+<p>Signal flow, system diagnostics, and reliable show support.</p>
+</div>
+</div>
+<div class="experience-row">
+<span>04</span>
+<div>
+<h3>Stage Infrastructure</h3>
+<p>Patching, routing, power, and organized technical setups.</p>
+</div>
+</div>
+<div class="experience-row">
+<span>05</span>
+<div>
+<h3>Recording Support</h3>
+<p>Session coordination, tracking assistance, and production workflow.</p>
+</div>
+</div>
+<div class="experience-row">
+<span>06</span>
+<div>
+<h3>Creative Development</h3>
+<p>Artist direction, branding concepts, and project vision.</p>
+</div>
+</div>
+<div class="experience-row">
+<span>07</span>
+<div>
+<h3>Project Consultation</h3>
+<p>Planning, problem-solving, and clear next-step guidance.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="philosophy" id="philosophy">
+<div class="frame philosophy-grid">
+<div class="section-number">05 / The Philosophy</div>
+<div>
+<h2>Build Your Legacy<i>;</i><br><em>Find Your Soul</em></h2>
+<p class="belief">;Find Your Soul Records was founded on a simple belief:</p>
+<p class="belief" style="color:var(--gold-light)">Meaningful work deserves meaningful support.</p>
+<div class="philosophy-copy">
+<p>What began as a creative pursuit evolved into a growing commitment to production, technical support, creative development, and long-term artistic growth.</p>
+<p>That commitment is especially important when art becomes part of how people understand themselves, learn together, gather in worship, preserve memory, and leave something behind. The same care belongs in every setting: with an artist finding their voice, a school bringing young musicians forward, an organization sharing its story, a church shaping a moment of connection, or a community keeping a piece of itself alive.</p>
+<p>The goal has never been to produce content.</p>
+<p>The goal is to help people create something worth remembering.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="spotlight" id="artist">
+<div class="frame spotlight-grid">
+<div></div>
+<div class="section-number">06 / Artist Spotlight</div>
+<div>
+<h2 class="spotlight-name">Heir<i>;</i> Appearant</h2>
+<p class="spotlight-copy">Story-led artistry shaped by identity, resilience, and authenticity, with an ongoing commitment to developing a voice that is distinctly his own.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="frame contact-grid">
+<div class="section-number">07 / Contact</div>
+<div>
+<h2>Start A<br>Conversation</h2>
+<p class="contact-intro">Tell us what you're building.<br><br>Every engagement begins with a conversation.</p>
+<div class="contact-info">
+<strong>Email</strong><br>
+contact.findyoursoul@gmail.com<br><br>
+<strong>Phone</strong><br>
+(409) 812-6793
+</div>
+</div>
+<form name="contact" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="contact">
+<div class="field-row">
+<div><label for="name">Name *</label><input id="name" name="name" required></div>
+<div><label for="email">Email *</label><input id="email" name="email" type="email" required></div>
+</div>
+<div class="field-row">
+<div><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
+<div><label for="service">Area of Interest</label><select id="service" name="service">
+<option>Audio Infrastructure</option>
+<option>Installation Services</option>
+<option>Creative Development</option>
+<option>Production Support</option>
+<option>Artist Development</option>
+<option>Event Audio</option>
+<option>Technical Consultation</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div><label for="message">Project Description *</label><textarea id="message" name="message" required></textarea></div>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
+</section>
+</main>
+<footer><div class="frame"><span>© 2026 ;Find Your Soul Records</span><span>Build Your Legacy; Find Your Soul</span></div></footer>
+<script>
+const menuButton=document.querySelector(".menu-toggle");
+const navigation=document.querySelector(".navlinks");
+const menuLinks=navigation.querySelectorAll("a");
+
+function closeMenu(){
+  navigation.classList.remove("open");
+  menuButton.setAttribute("aria-expanded","false");
+  menuButton.setAttribute("aria-label","Open navigation");
+  menuButton.textContent="☰";
+}
+
+menuButton.addEventListener("click",()=>{
+  const willOpen=!navigation.classList.contains("open");
+  navigation.classList.toggle("open",willOpen);
+  menuButton.setAttribute("aria-expanded",String(willOpen));
+  menuButton.setAttribute("aria-label",willOpen?"Close navigation":"Open navigation");
+  menuButton.textContent=willOpen?"×":"☰";
+});
+
+menuLinks.forEach(link=>{
+  link.addEventListener("click",closeMenu);
+});
+
+document.addEventListener("click",(event)=>{
+  if(!event.target.closest("header")) closeMenu();
+});
+
+document.addEventListener("keydown",(event)=>{
+  if(event.key==="Escape") {
+    closeMenu();
+    menuButton.focus();
+  }
+});
+</script>
+</body>
+</html>
